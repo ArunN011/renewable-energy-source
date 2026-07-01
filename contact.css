@@ -514,3 +514,295 @@ font-size:15px;
 }
 
 }
+
+
+.location-section{
+
+    padding:80px 0;
+
+    background:#F8FBFD;
+
+}
+
+.section-title h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#16A34A;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    color:#666;
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+.map-wrapper{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.map-wrapper iframe{
+
+    display:block;
+
+    width:100%;
+
+    border:0;
+
+}
+
+
+@media(max-width:768px){
+
+.location-section{
+
+padding:50px 15px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.map-wrapper iframe{
+
+height:300px;
+
+}
+
+}
+
+
+.footer-section{
+
+background:#054B48;
+
+padding:80px 0 20px;
+
+color:#fff;
+
+}
+
+.footer-logo img{
+
+width:170px;
+
+margin-bottom:20px;
+
+}
+
+.footer-logo p{
+
+line-height:1.9;
+
+color:#d6e9e9;
+
+margin-bottom:25px;
+
+}
+
+.footer-section h4{
+
+margin-bottom:25px;
+
+font-size:24px;
+
+font-weight:700;
+
+}
+
+.footer-section ul{
+
+padding:0;
+
+list-style:none;
+
+}
+
+.footer-section ul li{
+
+margin-bottom:15px;
+
+}
+
+.footer-section ul li a{
+
+color:#d6e9e9;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.footer-section ul li a:hover{
+
+color:#A3E635;
+
+padding-left:8px;
+
+}
+
+.footer-contact{
+
+padding:0;
+
+margin:0;
+
+list-style:none;
+
+}
+
+.footer-contact li{
+
+display:flex;
+
+gap:12px;
+
+align-items:center;
+
+margin-bottom:15px;
+
+color:#d6e9e9;
+
+}
+
+.footer-contact i{
+
+color:#A3E635;
+
+font-size:18px;
+
+}
+
+.social-icons{
+
+display:flex;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.social-icons a{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+background:#0D706B;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#fff;
+
+font-size:20px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+background:#A3E635;
+
+color:#054B48;
+
+transform:translateY(-5px);
+
+}
+
+.footer-section hr{
+
+margin:45px 0 20px;
+
+border-color:rgba(255,255,255,.15);
+
+}
+
+.copyright{
+
+text-align:center;
+
+font-size:15px;
+
+color:#d6e9e9;
+
+}
+
+
+@media(max-width:991px){
+
+.footer-section{
+
+text-align:center;
+
+}
+
+.contact-info li{
+
+justify-content:center;
+
+}
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.footer-section{
+
+padding:60px 0 20px;
+
+}
+
+.footer-logo img{
+
+width:140px;
+
+}
+
+.footer-section h4{
+
+font-size:20px;
+
+}
+
+.social-icons{
+
+flex-wrap:wrap;
+
+}
+
+}
