@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Renewable Energy Solution</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body>
+
+<section class="register-section">
+
+<div class="container">
+
+<div class="row align-items-center register-wrapper">
+
+
+
+<div class="col-lg-6 d-none d-lg-block">
+
+<div class="register-left">
+
+<img src="signupsolarimg.webp"
+class="img-fluid register-img"
+alt="Renewable Energy">
+
+<div class="register-content">
+
+<span class="register-badge">
+
+<i class="bi bi-lightning-charge-fill"></i>
+
+Renewable Energy
+
+</span>
+
+<h1>
+
+Join Our
+
+<span>Green Future</span>
+
+Today
+
+</h1>
+
+<p>
+
+Create your account to explore renewable
+energy services, monitor projects and
+build a sustainable future.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-lg-6">
+
+<div class="register-card">
+
+<div class="text-center mb-4">
+
+<img src="finalgreenlogo.png"
+class="register-logo"
+alt="Logo">
+
+<h2>Create Account</h2>
+
+<p>
+
+Register to access Renewable Energy Solutions
+
+</p>
+
+</div>
+
+<form id="registerForm">
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Register As
+
+</label>
+
+<select
+class="form-select"
+id="role">
+
+<option value="">
+
+Select Role
+
+</option>
+
+<option>
+
+Admin
+
+</option>
+
+<option>
+
+User
+
+</option>
+
+</select>
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Full Name
+
+</label>
+
+<input
+type="text"
+class="form-control"
+placeholder="Enter your full name">
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Email Address
+
+</label>
+
+<input
+type="email"
+class="form-control"
+placeholder="Enter your email">
+
+</div>
+
+
+
+<div class="mb-3">
+
+<label class="form-label">
+
+Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+class="form-control"
+id="password"
+placeholder="Enter password">
+
+<i
+class="bi bi-eye-slash-fill toggle-password"
+id="togglePassword">
+
+</i>
+
+</div>
+
+</div>
+
+
+
+<div class="mb-4">
+
+<label class="form-label">
+
+Confirm Password
+
+</label>
+
+<div class="password-box">
+
+<input
+type="password"
+class="form-control"
+id="confirmPassword"
+placeholder="Confirm password">
+
+<i
+class="bi bi-eye-slash-fill toggle-confirm-password"
+id="toggleConfirmPassword">
+
+</i>
+
+</div>
+
+</div>
+
+
+<button
+type="submit"
+class="btn register-btn">
+
+<i class="bi bi-person-plus-fill"></i>
+
+Create Account
+
+</button>
+
+<div class="divider">
+
+<span>
+
+or continue with
+
+</span>
+
+</div>
+
+
+
+<div class="social-login">
+
+<a href="error.html"
+class="social-btn google">
+
+<i class="bi bi-google"></i>
+
+Google
+
+</a>
+
+<a href="error.html"
+class="social-btn facebook">
+
+<i class="bi bi-facebook"></i>
+
+Facebook
+
+</a>
+
+<a href="error.html"
+class="social-btn microsoft">
+
+<i class="bi bi-microsoft"></i>
+
+Microsoft
+
+</a>
+
+</div>
+
+
+
+<div class="login-text">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</div>
+
+
+<a
+href="index.html"
+class="btn home-btn">
+
+<i class="bi bi-house-door-fill"></i>
+
+Back To Home
+
+</a>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+    const registerForm = document.getElementById("registerForm");
+
+    const passwordInput = document.getElementById("password");
+
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+
+    const togglePassword = document.getElementById("togglePassword");
+
+    const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
+
+
+    togglePassword.addEventListener("click", () => {
+
+        if (passwordInput.type === "password") {
+
+            passwordInput.type = "text";
+
+            togglePassword.classList.remove("bi-eye-slash-fill");
+            togglePassword.classList.add("bi-eye-fill");
+
+        } else {
+
+            passwordInput.type = "password";
+
+            togglePassword.classList.remove("bi-eye-fill");
+            togglePassword.classList.add("bi-eye-slash-fill");
+
+        }
+
+    });
+
+
+
+    toggleConfirmPassword.addEventListener("click", () => {
+
+        if (confirmPasswordInput.type === "password") {
+
+            confirmPasswordInput.type = "text";
+
+            toggleConfirmPassword.classList.remove("bi-eye-slash-fill");
+            toggleConfirmPassword.classList.add("bi-eye-fill");
+
+        } else {
+
+            confirmPasswordInput.type = "password";
+
+            toggleConfirmPassword.classList.remove("bi-eye-fill");
+            toggleConfirmPassword.classList.add("bi-eye-slash-fill");
+
+        }
+
+    });
+
+
+    registerForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const role = document.getElementById("role").value;
+
+        const name = document.querySelector('input[type="text"]').value.trim();
+
+        const email = document.querySelector('input[type="email"]').value.trim();
+
+        const password = passwordInput.value.trim();
+
+        const confirmPassword = confirmPasswordInput.value.trim();
+
+
+
+        if (
+            role === "" ||
+            name === "" ||
+            email === "" ||
+            password === "" ||
+            confirmPassword === ""
+        ) {
+
+            Swal.fire({
+
+                icon: "warning",
+
+                title: "Incomplete Form",
+
+                text: "Please fill all fields.",
+
+                confirmButtonColor: "#16A34A"
+
+            });
+
+            return;
+
+        }
+
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+
+            Swal.fire({
+
+                icon: "error",
+
+                title: "Invalid Email",
+
+                text: "Please enter a valid email address.",
+
+                confirmButtonColor: "#16A34A"
+
+            });
+
+            return;
+
+        }
+
+
+        if (password.length < 6) {
+
+            Swal.fire({
+
+                icon: "warning",
+
+                title: "Weak Password",
+
+                text: "Password must contain at least 6 characters.",
+
+                confirmButtonColor: "#16A34A"
+
+            });
+
+            return;
+
+        }
+
+
+        if (password !== confirmPassword) {
+
+            Swal.fire({
+
+                icon: "error",
+
+                title: "Password Mismatch",
+
+                text: "Password and Confirm Password do not match.",
+
+                confirmButtonColor: "#16A34A"
+
+            });
+
+            return;
+
+        }
+
+   
+
+        const btn = document.querySelector(".register-btn");
+
+        btn.disabled = true;
+
+        btn.innerHTML = `
+            <span class="spinner-border spinner-border-sm"></span>
+            Creating Account...
+        `;
+
+   
+
+        setTimeout(() => {
+
+            Swal.fire({
+
+                icon: "success",
+
+                title: "Registration Successful!",
+
+                text: "Your account has been created successfully.",
+
+                confirmButtonColor: "#16A34A",
+
+                allowOutsideClick: false
+
+            }).then(() => {
+
+                window.location.href = "login.html";
+
+            });
+
+        }, 1000);
+
+    });
+
+
+    document.querySelectorAll(".form-control,.form-select").forEach(input => {
+
+        input.addEventListener("focus", function () {
+
+            this.style.transform = "scale(1.02)";
+
+        });
+
+        input.addEventListener("blur", function () {
+
+            this.style.transform = "scale(1)";
+
+        });
+
+    });
+
+
+
+    const registerBtn = document.querySelector(".register-btn");
+
+    registerBtn.addEventListener("mouseenter", () => {
+
+        registerBtn.style.transform = "translateY(-5px)";
+
+    });
+
+    registerBtn.addEventListener("mouseleave", () => {
+
+        registerBtn.style.transform = "translateY(0)";
+
+    });
+
+});
+
+
+
+window.addEventListener("pageshow", () => {
+
+    const form = document.getElementById("registerForm");
+
+    const btn = document.querySelector(".register-btn");
+
+    if (form) {
+
+        form.reset();
+
+    }
+
+    if (btn) {
+
+        btn.disabled = false;
+
+        btn.innerHTML = `
+            <i class="bi bi-person-plus-fill"></i>
+            Create Account
+        `;
+
+    }
+
+});
+</script>
+
+
+</body>
+</html>

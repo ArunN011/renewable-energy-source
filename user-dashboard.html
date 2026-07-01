@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>User Dashboard | Renewable Energy</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet"
+href="user-dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+
+<aside class="sidebar"
+id="sidebar">
+
+<div class="logo">
+
+<img src="finalgreenlogo.png">
+
+
+</div>
+
+<ul>
+
+<li class="active">
+
+<a href="#">
+
+<i class="bi bi-grid-fill"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-lightning-charge-fill"></i>
+
+My Energy
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-sun-fill"></i>
+
+Solar Production
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-battery-charging"></i>
+
+Battery Status
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-cash-stack"></i>
+
+Bills & Savings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-graph-up-arrow"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-car-front-fill"></i>
+
+EV Charging
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-bell-fill"></i>
+
+Notifications
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-person-fill"></i>
+
+My Profile
+
+</a>
+
+</li>
+
+<li>
+
+<a href="error.html">
+
+<i class="bi bi-gear-fill"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html"
+id="logoutBtn">
+
+<i class="bi bi-box-arrow-left"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+
+
+<div class="main-content">
+
+
+
+<header class="topbar">
+
+<button
+class="menu-btn"
+id="menuBtn">
+
+<i class="bi bi-list"></i>
+
+</button>
+
+<div class="search-box">
+
+<i class="bi bi-search"></i>
+
+<input
+type="text"
+placeholder="Search production, reports...">
+
+</div>
+
+<div class="top-icons">
+
+<a href="error.html">
+
+<i class="bi bi-envelope"></i>
+
+</a>
+
+<a href="error.html">
+
+<i class="bi bi-bell"></i>
+
+</a>
+
+<div class="profile">
+
+<img src="user3.webp">
+
+<div>
+
+<h6 id="userName">
+
+User
+
+</h6>
+
+<small id="userRole">
+
+USER
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<section class="analytics-header">
+
+<div>
+
+<h2>
+
+Renewable Energy Analytics
+
+</h2>
+
+<p>
+
+Track your real-time renewable energy production,
+battery health, power consumption,
+and sustainability goals.
+
+</p>
+
+</div>
+
+<div class="analytics-actions">
+
+<div class="date-box">
+
+<i class="bi bi-calendar-event"></i>
+
+May 2026
+
+</div>
+
+<a
+href="error.html"
+class="btn btn-light">
+
+<i class="bi bi-download"></i>
+
+Download Report
+
+</a>
+
+<a
+href="error.html"
+class="btn btn-success">
+
+<i class="bi bi-share"></i>
+
+Share
+
+</a>
+
+</div>
+
+</section>
+
+
+<div class="row g-4">
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon green">
+
+<i class="bi bi-sun-fill"></i>
+
+</div>
+
+<h3 id="solarValue">
+
+542
+
+</h3>
+
+<span>
+
+kWh Generated
+
+</span>
+
+<small>
+
+▲ +15%
+
+Today
+
+</small>
+
+</div>
+
+</div>
+
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon blue">
+
+<i class="bi bi-battery-half"></i>
+
+</div>
+
+<h3>
+
+84%
+
+</h3>
+
+<span>
+
+Battery Health
+
+</span>
+
+<small>
+
+Charging
+
+</small>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon orange">
+
+<i class="bi bi-cloud-check-fill"></i>
+
+</div>
+
+<h3>
+
+18.2
+
+</h3>
+
+<span>
+
+CO₂ Saved
+
+</span>
+
+<small>
+
+Tons
+
+</small>
+
+</div>
+
+</div>
+
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon purple">
+
+<i class="bi bi-currency-rupee"></i>
+
+</div>
+
+<h3>
+
+₹12.4K
+
+</h3>
+
+<span>
+
+Monthly Savings
+
+</span>
+
+<small>
+
++18%
+
+</small>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon green">
+
+<i class="bi bi-lightning-fill"></i>
+
+</div>
+
+<h3>
+
+91%
+
+</h3>
+
+<span>
+
+Renewable Usage
+
+</span>
+
+<small>
+
+Efficiency
+
+</small>
+
+</div>
+
+</div>
+
+
+<div class="col-xl-2 col-lg-4 col-md-6">
+
+<div class="stat-card">
+
+<div class="icon red">
+
+<i class="bi bi-arrow-up-circle-fill"></i>
+
+</div>
+
+<h3>
+
+142
+
+</h3>
+
+<span>
+
+Grid Export
+
+</span>
+
+<small>
+
+kWh
+
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row g-4 mt-2">
+
+
+    <div class="col-xl-4">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Energy Progress
+
+                </h5>
+
+                <a href="error.html">
+
+                    View All
+
+                </a>
+
+            </div>
+
+            <div class="progress-grid">
+
+
+                <div class="progress-item">
+
+                    <div class="circle-progress">
+
+                        <svg width="130" height="130">
+
+                            <circle
+                                class="progress-bg"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                            <circle
+                                class="progress-bar"
+                                id="batteryProgress"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                        </svg>
+
+                        <div class="circle-value">
+
+                            <span id="batteryValue">
+
+                                0%
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <h6>
+
+                        Battery Health
+
+                    </h6>
+
+                </div>
+
+             
+
+                <div class="progress-item">
+
+                    <div class="circle-progress">
+
+                        <svg width="130" height="130">
+
+                            <circle
+                                class="progress-bg"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                            <circle
+                                class="progress-bar"
+                                id="solarProgress"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                        </svg>
+
+                        <div class="circle-value">
+
+                            <span id="solarEfficiency">
+
+                                0%
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <h6>
+
+                        Solar Efficiency
+
+                    </h6>
+
+                </div>
+
+           
+
+                <div class="progress-item">
+
+                    <div class="circle-progress">
+
+                        <svg width="130" height="130">
+
+                            <circle
+                                class="progress-bg"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                            <circle
+                                class="progress-bar"
+                                id="goalProgress"
+                                cx="65"
+                                cy="65"
+                                r="48">
+                            </circle>
+
+                        </svg>
+
+                        <div class="circle-value">
+
+                            <span id="goalValue">
+
+                                0%
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <h6>
+
+                        Monthly Goal
+
+                    </h6>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-xl-5">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Energy Production Trend
+
+                </h5>
+
+                <select
+                    class="form-select w-auto">
+
+                    <option>
+
+                        Last 7 Days
+
+                    </option>
+
+                    <option>
+
+                        Last Month
+
+                    </option>
+
+                    <option>
+
+                        Last Year
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <canvas id="energyProductionChart">
+
+            </canvas>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="col-xl-3">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Energy Distribution
+
+                </h5>
+
+            </div>
+
+            <canvas id="energyPieChart">
+
+            </canvas>
+
+            <div class="energy-details mt-4">
+
+                <div>
+
+                    <span class="dot green"></span>
+
+                    Solar
+
+                    <strong>
+
+                        55%
+
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span class="dot blue"></span>
+
+                    Battery
+
+                    <strong>
+
+                        25%
+
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span class="dot orange"></span>
+
+                    Grid
+
+                    <strong>
+
+                        20%
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="dashboard-card mt-4">
+
+    <div class="card-header-custom">
+
+        <h5>
+
+            Live Renewable Energy Flow
+
+        </h5>
+
+        <a href="error.html">
+
+            View Details
+
+        </a>
+
+    </div>
+
+    <div class="energy-flow">
+
+        <div class="flow-card">
+
+            <i class="bi bi-sun-fill"></i>
+
+            <h6>
+
+                Solar Panels
+
+            </h6>
+
+            <span>
+
+                542 kWh
+
+            </span>
+
+        </div>
+
+        <div class="flow-arrow">
+
+            <i class="bi bi-arrow-right-circle-fill"></i>
+
+        </div>
+
+        <div class="flow-card">
+
+            <i class="bi bi-lightning-charge-fill"></i>
+
+            <h6>
+
+                Inverter
+
+            </h6>
+
+            <span>
+
+                98%
+
+            </span>
+
+        </div>
+
+        <div class="flow-arrow">
+
+            <i class="bi bi-arrow-right-circle-fill"></i>
+
+        </div>
+
+        <div class="flow-card">
+
+            <i class="bi bi-house-fill"></i>
+
+            <h6>
+
+                Home Usage
+
+            </h6>
+
+            <span>
+
+                284 kWh
+
+            </span>
+
+        </div>
+
+        <div class="flow-arrow">
+
+            <i class="bi bi-arrow-right-circle-fill"></i>
+
+        </div>
+
+        <div class="flow-card">
+
+            <i class="bi bi-battery-charging"></i>
+
+            <h6>
+
+                Battery
+
+            </h6>
+
+            <span>
+
+                84%
+
+            </span>
+
+        </div>
+
+        <div class="flow-arrow">
+
+            <i class="bi bi-arrow-right-circle-fill"></i>
+
+        </div>
+
+        <div class="flow-card">
+
+            <i class="bi bi-lightning-fill"></i>
+
+            <h6>
+
+                Grid Export
+
+            </h6>
+
+            <span>
+
+                142 kWh
+
+            </span>
+
+        </div>
+
+    </div>
+  
+
+<div class="row g-4 mt-4">
+
+   
+
+    <div class="col-xl-8">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Energy Production History
+
+                </h5>
+
+                <a href="error.html">
+
+                    View Full Report
+
+                </a>
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table align-middle">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+
+                            <th>Generated</th>
+
+                            <th>Consumed</th>
+
+                            <th>Grid Export</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>01 Jul 2026</td>
+
+                            <td>542 kWh</td>
+
+                            <td>318 kWh</td>
+
+                            <td>224 kWh</td>
+
+                            <td>
+
+                                <span class="badge bg-success">
+
+                                    Excellent
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>30 Jun 2026</td>
+
+                            <td>498 kWh</td>
+
+                            <td>301 kWh</td>
+
+                            <td>197 kWh</td>
+
+                            <td>
+
+                                <span class="badge bg-primary">
+
+                                    Good
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>29 Jun 2026</td>
+
+                            <td>472 kWh</td>
+
+                            <td>320 kWh</td>
+
+                            <td>152 kWh</td>
+
+                            <td>
+
+                                <span class="badge bg-warning">
+
+                                    Average
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>28 Jun 2026</td>
+
+                            <td>560 kWh</td>
+
+                            <td>312 kWh</td>
+
+                            <td>248 kWh</td>
+
+                            <td>
+
+                                <span class="badge bg-success">
+
+                                    Excellent
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-xl-4">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Smart Devices
+
+                </h5>
+
+                <a href="error.html">
+
+                    Manage
+
+                </a>
+
+            </div>
+
+            <div class="device-item">
+
+                <i class="bi bi-sun-fill text-warning"></i>
+
+                <div>
+
+                    <h6>Solar Panels</h6>
+
+                    <small>Online</small>
+
+                </div>
+
+                <span class="badge bg-success">
+
+                    Active
+
+                </span>
+
+            </div>
+
+            <div class="device-item">
+
+                <i class="bi bi-lightning-charge-fill text-primary"></i>
+
+                <div>
+
+                    <h6>Inverter</h6>
+
+                    <small>Running</small>
+
+                </div>
+
+                <span class="badge bg-success">
+
+                    Active
+
+                </span>
+
+            </div>
+
+            <div class="device-item">
+
+                <i class="bi bi-battery-charging text-success"></i>
+
+                <div>
+
+                    <h6>Battery Pack</h6>
+
+                    <small>Charging</small>
+
+                </div>
+
+                <span class="badge bg-info">
+
+                    84%
+
+                </span>
+
+            </div>
+
+            <div class="device-item">
+
+                <i class="bi bi-ev-front-fill text-danger"></i>
+
+                <div>
+
+                    <h6>EV Charger</h6>
+
+                    <small>Connected</small>
+
+                </div>
+
+                <span class="badge bg-primary">
+
+                    Ready
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="row g-4 mt-2">
+
+    <!-- Weather -->
+
+    <div class="col-lg-4">
+
+        <div class="weather-card">
+
+            <i class="bi bi-brightness-high-fill"></i>
+
+            <h2>
+
+                34°C
+
+            </h2>
+
+            <h5>
+
+                Chennai
+
+            </h5>
+
+            <p>
+
+                Excellent Solar Production Today
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="col-lg-4">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Monthly Savings
+
+                </h5>
+
+            </div>
+
+            <h2 class="text-success">
+
+                ₹12,480
+
+            </h2>
+
+            <p>
+
+                You saved 18% more compared to last month.
+
+            </p>
+
+            <a href="error.html"
+               class="btn btn-success">
+
+                View Details
+
+            </a>
+
+        </div>
+
+    </div>
+
+  
+
+    <div class="col-lg-4">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Notifications
+
+                </h5>
+
+            </div>
+
+            <ul class="activity-list">
+
+                <li>
+
+                    <i class="bi bi-check-circle-fill text-success"></i>
+
+                    Battery Fully Charged
+
+                </li>
+
+                <li>
+
+                    <i class="bi bi-lightning-fill text-warning"></i>
+
+                    Solar Output Increased
+
+                </li>
+
+                <li>
+
+                    <i class="bi bi-ev-front-fill text-primary"></i>
+
+                    EV Charging Completed
+
+                </li>
+
+                <li>
+
+                    <i class="bi bi-receipt text-danger"></i>
+
+                    Electricity Bill Generated
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="dashboard-card mt-4">
+
+    <div class="card-header-custom">
+
+        <h5>
+
+            User Profile Summary
+
+        </h5>
+
+        <a href="error.html">
+
+            Edit Profile
+
+        </a>
+
+    </div>
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+
+            <h6>
+
+                Name
+
+            </h6>
+
+            <p id="profileName">
+
+                User
+
+            </p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h6>
+
+                Role
+
+            </h6>
+
+            <p id="profileRole">
+
+                USER
+
+            </p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h6>
+
+                Plan
+
+            </h6>
+
+            <p>
+
+                Premium Residential
+
+            </p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h6>
+
+                Location
+
+            </h6>
+
+            <p>
+
+                Chennai
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer class="dashboard-footer mt-4">
+
+    <div>
+
+        © 2026 Renewable Energy Solutions
+
+    </div>
+
+    <div>
+
+        Logged In As :
+
+        <strong id="footerUser">
+
+            User
+
+        </strong>
+
+        |
+
+        Role :
+
+        <span
+            class="badge bg-success"
+            id="footerRole">
+
+            USER
+
+        </span>
+
+    </div>
+
+</footer>
+
+</div>
+
+</div>
+
+</div>
+
+<div
+class="overlay"
+id="overlay">
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script >
+    document.addEventListener("DOMContentLoaded", () => {
+
+
+    const menuBtn = document.getElementById("menuBtn");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+
+    menuBtn.addEventListener("click", () => {
+
+        sidebar.classList.toggle("active");
+
+        overlay.classList.toggle("active");
+
+    });
+
+    overlay.addEventListener("click", () => {
+
+        sidebar.classList.remove("active");
+
+        overlay.classList.remove("active");
+
+    });
+
+
+    const userName =
+        localStorage.getItem("userName") || "User";
+
+    const userRole =
+        localStorage.getItem("userRole") || "USER";
+
+    const ids = [
+
+        "userName",
+
+        "profileName",
+
+        "footerUser"
+
+    ];
+
+    ids.forEach(id => {
+
+        const el = document.getElementById(id);
+
+        if(el){
+
+            el.innerHTML = userName;
+
+        }
+
+    });
+
+    const roles = [
+
+        "userRole",
+
+        "profileRole",
+
+        "footerRole"
+
+    ];
+
+    roles.forEach(id => {
+
+        const el = document.getElementById(id);
+
+        if(el){
+
+            el.innerHTML = userRole.toUpperCase();
+
+        }
+
+    });
+
+    
+
+    document.getElementById("logoutBtn")
+    .addEventListener("click",function(e){
+
+        e.preventDefault();
+
+        Swal.fire({
+
+            title:"Logout",
+
+            text:"Do you want to logout?",
+
+            icon:"question",
+
+            showCancelButton:true,
+
+            confirmButtonColor:"#16A34A",
+
+            cancelButtonColor:"#d33",
+
+            confirmButtonText:"Logout"
+
+        }).then((result)=>{
+
+            if(result.isConfirmed){
+
+                localStorage.clear();
+
+                window.location.href="login.html";
+
+            }
+
+        });
+
+    });
+
+   
+
+    animateCounter("solarValue",542);
+
+    function animateCounter(id,target){
+
+        const el=document.getElementById(id);
+
+        if(!el) return;
+
+        let count=0;
+
+        const timer=setInterval(()=>{
+
+            count+=4;
+
+            el.innerHTML=count;
+
+            if(count>=target){
+
+                el.innerHTML=target;
+
+                clearInterval(timer);
+
+            }
+
+        },15);
+
+    }
+
+   
+
+    animateCircle(
+
+        "batteryProgress",
+
+        "batteryValue",
+
+        84
+
+    );
+
+    animateCircle(
+
+        "solarProgress",
+
+        "solarEfficiency",
+
+        91
+
+    );
+
+    animateCircle(
+
+        "goalProgress",
+
+        "goalValue",
+
+        72
+
+    );
+
+    function animateCircle(circleId,textId,target){
+
+        const circle=document.getElementById(circleId);
+
+        const text=document.getElementById(textId);
+
+        if(!circle||!text) return;
+
+        const radius=48;
+
+        const circumference=2*Math.PI*radius;
+
+        circle.style.strokeDasharray=circumference;
+
+        let value=0;
+
+        const timer=setInterval(()=>{
+
+            value++;
+
+            text.innerHTML=value+"%";
+
+            const offset=
+
+            circumference-
+
+            (value/100)*circumference;
+
+            circle.style.strokeDashoffset=offset;
+
+            if(value>=target){
+
+                clearInterval(timer);
+
+            }
+
+        },20);
+
+    }
+
+   
+
+    const lineChart=document.getElementById("energyProductionChart");
+
+    if(lineChart){
+
+        new Chart(lineChart,{
+
+            type:"line",
+
+            data:{
+
+                labels:[
+
+                    "Mon",
+
+                    "Tue",
+
+                    "Wed",
+
+                    "Thu",
+
+                    "Fri",
+
+                    "Sat",
+
+                    "Sun"
+
+                ],
+
+                datasets:[{
+
+                    label:"Energy Generated",
+
+                    data:[
+
+                        430,
+
+                        510,
+
+                        490,
+
+                        620,
+
+                        580,
+
+                        640,
+
+                        720
+
+                    ],
+
+                    borderColor:"#16A34A",
+
+                    backgroundColor:"rgba(22,163,74,.12)",
+
+                    fill:true,
+
+                    tension:.4
+
+                }]
+
+            },
+
+            options:{
+
+                responsive:true,
+
+                maintainAspectRatio:false,
+
+                plugins:{
+
+                    legend:{
+
+                        display:false
+
+                    }
+
+                },
+
+                scales:{
+
+                    y:{
+
+                        beginAtZero:true
+
+                    }
+
+                }
+
+            }
+
+        });
+
+    }
+
+
+    const pie=document.getElementById("energyPieChart");
+
+    if(pie){
+
+        new Chart(pie,{
+
+            type:"doughnut",
+
+            data:{
+
+                labels:[
+
+                    "Solar",
+
+                    "Battery",
+
+                    "Grid"
+
+                ],
+
+                datasets:[{
+
+                    data:[55,25,20],
+
+                    backgroundColor:[
+
+                        "#16A34A",
+
+                        "#0EA5E9",
+
+                        "#F59E0B"
+
+                    ],
+
+                    borderWidth:0
+
+                }]
+
+            },
+
+            options:{
+
+                cutout:"70%",
+
+                plugins:{
+
+                    legend:{
+
+                        display:false
+
+                    }
+
+                }
+
+            }
+
+        });
+
+    }
+
+  
+
+    document.querySelectorAll(
+
+        ".dashboard-card,.stat-card"
+
+    ).forEach((card,index)=>{
+
+        card.style.opacity="0";
+
+        card.style.transform="translateY(30px)";
+
+        setTimeout(()=>{
+
+            card.style.transition=".6s";
+
+            card.style.opacity="1";
+
+            card.style.transform="translateY(0)";
+
+        },index*120);
+
+    });
+
+});
+</script>
+
+</body>
+
+</html>

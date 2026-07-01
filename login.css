@@ -1,0 +1,299 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5faf6;
+}
+
+.login-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:60px 0;
+    background:linear-gradient(135deg,#f8fcf9,#eef9ff);
+    position:relative;
+    overflow:hidden;
+}
+
+.login-section::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    border:2px solid rgba(22,163,74,.08);
+    border-radius:50%;
+    left:-250px;
+    top:-250px;
+}
+
+.login-section::after{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    border:2px solid rgba(14,165,233,.08);
+    border-radius:50%;
+    right:-220px;
+    bottom:-220px;
+}
+
+.login-wrapper{
+    position:relative;
+    z-index:2;
+}
+
+
+.login-left{
+    position:relative;
+    text-align:center;
+    padding:30px;
+}
+
+.login-img{
+    width:100%;
+    max-height:600px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+
+.login-content{
+    margin-top:30px;
+}
+
+.login-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 22px;
+    background:#EAF8DD;
+    color:#5E9100;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.login-content h1{
+    font-size:52px;
+    font-weight:800;
+    margin:25px 0;
+    color:#222;
+}
+
+.login-content h1 span{
+    background:linear-gradient(90deg,#16A34A,#0EA5E9);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.login-content p{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+}
+
+
+
+.login-card{
+    background:#fff;
+    padding:45px;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.login-logo{
+    width:90px;
+    margin-bottom:15px;
+}
+
+.login-card h2{
+    font-size:36px;
+    font-weight:700;
+    color:#222;
+}
+
+.login-card p{
+    color:#777;
+    margin-bottom:30px;
+}
+
+
+.form-label{
+    font-weight:600;
+    color:#333;
+}
+
+.form-control,
+.form-select{
+    height:55px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    padding:0 18px;
+    transition:.35s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#16A34A;
+    box-shadow:0 0 0 .2rem rgba(22,163,74,.15);
+}
+
+
+.password-box{
+    position:relative;
+}
+
+.toggle-password{
+    position:absolute;
+    top:50%;
+    right:18px;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#777;
+    font-size:20px;
+}
+
+
+
+.forgot-link{
+    text-decoration:none;
+    color:#16A34A;
+    font-weight:600;
+}
+
+.forgot-link:hover{
+    color:#0EA5E9;
+}
+
+.login-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#16A34A,#0EA5E9);
+    color:#fff;
+    font-weight:700;
+    font-size:17px;
+    margin-bottom:15px;
+    transition:.35s;
+}
+
+.login-btn:hover{
+    transform:translateY(-5px);
+    color:#fff;
+    box-shadow:0 15px 35px rgba(22,163,74,.25);
+}
+
+.home-btn{
+    width:100%;
+    padding:15px;
+    border-radius:50px;
+    border:2px solid #16A34A;
+    color:#16A34A;
+    font-weight:700;
+    transition:.35s;
+}
+
+.home-btn:hover{
+    background:#16A34A;
+    color:#fff;
+}
+
+.signup-text{
+    margin-top:25px;
+    text-align:center;
+    color:#666;
+}
+
+.signup-text a{
+    color:#16A34A;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.signup-text a:hover{
+    color:#0EA5E9;
+}
+
+@media(max-width:992px){
+
+.login-section{
+    padding:70px 0;
+}
+
+.login-card{
+    padding:35px;
+}
+
+.login-card h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:768px){
+
+.login-section{
+    padding:50px 15px;
+}
+
+.login-card{
+    padding:30px 25px;
+    border-radius:25px;
+}
+
+.login-card h2{
+    font-size:28px;
+}
+
+.form-control,
+.form-select{
+    height:50px;
+}
+
+.login-btn,
+.home-btn{
+    padding:14px;
+}
+
+}
+
+@media(max-width:576px){
+
+.login-card{
+    padding:22px;
+}
+
+.login-logo{
+    width:70px;
+}
+
+.login-card h2{
+    font-size:24px;
+}
+
+.login-card p{
+    font-size:15px;
+}
+
+.form-control,
+.form-select{
+    height:48px;
+    font-size:14px;
+}
+
+.login-btn,
+.home-btn{
+    font-size:15px;
+}
+
+.signup-text{
+    font-size:14px;
+}
+
+.forgot-link{
+    font-size:14px;
+}
+
+}

@@ -1,0 +1,373 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5faf6;
+}
+
+.register-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:60px 0;
+    background:linear-gradient(135deg,#f8fcf9,#eef9ff);
+    position:relative;
+    overflow:hidden;
+}
+
+.register-section::before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    border:2px solid rgba(22,163,74,.08);
+    border-radius:50%;
+    left:-250px;
+    top:-250px;
+}
+
+.register-section::after{
+    content:"";
+    position:absolute;
+    width:550px;
+    height:550px;
+    border:2px solid rgba(14,165,233,.08);
+    border-radius:50%;
+    right:-220px;
+    bottom:-220px;
+}
+
+.register-wrapper{
+    position:relative;
+    z-index:2;
+}
+
+
+
+.register-left{
+    padding:30px;
+    text-align:center;
+}
+
+.register-img{
+    width:100%;
+    max-height:600px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+
+.register-content{
+    margin-top:30px;
+}
+
+.register-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 22px;
+    background:#EAF8DD;
+    color:#5E9100;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.register-content h1{
+    font-size:52px;
+    font-weight:800;
+    color:#222;
+    margin:25px 0;
+}
+
+.register-content h1 span{
+    background:linear-gradient(90deg,#16A34A,#0EA5E9);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.register-content p{
+    color:#666;
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+.register-card{
+    background:#fff;
+    border-radius:30px;
+    padding:45px;
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.register-card:hover{
+    transform:translateY(-5px);
+}
+
+.register-logo{
+    width:90px;
+    margin-bottom:15px;
+}
+
+.register-card h2{
+    font-size:36px;
+    font-weight:700;
+    color:#222;
+}
+
+.register-card p{
+    color:#777;
+}
+
+.form-label{
+    font-weight:600;
+    color:#333;
+}
+
+.form-control,
+.form-select{
+    height:55px;
+    border-radius:15px;
+    border:1px solid #ddd;
+    padding:0 18px;
+    transition:.35s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#16A34A;
+    box-shadow:0 0 0 .2rem rgba(22,163,74,.15);
+}
+
+
+.password-box{
+    position:relative;
+}
+
+.toggle-password,
+.toggle-confirm-password{
+    position:absolute;
+    top:50%;
+    right:18px;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:20px;
+    color:#777;
+}
+
+
+
+.register-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(135deg,#16A34A,#0EA5E9);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    transition:.35s;
+}
+
+.register-btn:hover{
+    color:#fff;
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(22,163,74,.25);
+}
+
+
+
+.divider{
+    margin:30px 0;
+    text-align:center;
+    position:relative;
+}
+
+.divider::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:50%;
+    width:100%;
+    height:1px;
+    background:#ddd;
+}
+
+.divider span{
+    position:relative;
+    background:#fff;
+    padding:0 18px;
+    color:#777;
+}
+
+
+.social-login{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.social-btn{
+    flex:1;
+    min-width:150px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    padding:13px;
+    border-radius:15px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s;
+}
+
+.google{
+    background:#fff3f3;
+    color:#EA4335;
+}
+
+.facebook{
+    background:#eef4ff;
+    color:#1877F2;
+}
+
+.microsoft{
+    background:#eefdf5;
+    color:#00A651;
+}
+
+.social-btn:hover{
+    transform:translateY(-5px);
+    color:#fff;
+}
+
+.google:hover{
+    background:#EA4335;
+}
+
+.facebook:hover{
+    background:#1877F2;
+}
+
+.microsoft:hover{
+    background:#00A651;
+}
+
+
+.login-text{
+    margin:30px 0 20px;
+    text-align:center;
+    color:#666;
+}
+
+.login-text a{
+    color:#16A34A;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.login-text a:hover{
+    color:#0EA5E9;
+}
+
+
+.home-btn{
+    width:100%;
+    border:2px solid #16A34A;
+    border-radius:50px;
+    padding:15px;
+    color:#16A34A;
+    font-weight:700;
+    transition:.35s;
+}
+
+.home-btn:hover{
+    background:#16A34A;
+    color:#fff;
+}
+
+
+@media(max-width:992px){
+
+.register-section{
+    padding:70px 0;
+}
+
+.register-card{
+    padding:35px;
+}
+
+.register-card h2{
+    font-size:32px;
+}
+
+}
+
+@media(max-width:768px){
+
+.register-section{
+    padding:50px 15px;
+}
+
+.register-card{
+    padding:28px;
+    border-radius:25px;
+}
+
+.register-card h2{
+    font-size:28px;
+}
+
+.form-control,
+.form-select{
+    height:50px;
+}
+
+.register-btn,
+.home-btn{
+    padding:14px;
+}
+
+.social-btn{
+    min-width:100%;
+}
+
+}
+
+@media(max-width:576px){
+
+.register-card{
+    padding:22px;
+}
+
+.register-logo{
+    width:70px;
+}
+
+.register-card h2{
+    font-size:24px;
+}
+
+.register-card p{
+    font-size:15px;
+}
+
+.form-control,
+.form-select{
+    height:48px;
+    font-size:14px;
+}
+
+.register-btn,
+.home-btn{
+    font-size:15px;
+}
+
+.login-text{
+    font-size:14px;
+}
+
+}

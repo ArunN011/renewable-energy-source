@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Renewable Energy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <img src="finalgreenlogo.png" alt="Logo">
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="admin-dashboard.html">
+                    <i class="bi bi-grid-fill"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-people-fill"></i>
+                    Users
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-sun-fill"></i>
+                    Solar Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-wind"></i>
+                    Wind Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-battery-charging"></i>
+                    Battery Storage
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    Energy Monitoring
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-graph-up-arrow"></i>
+                    Analytics
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-envelope-paper-fill"></i>
+                    Contact Requests
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-newspaper"></i>
+                    Blog
+                </a>
+            </li>
+
+            <li>
+                <a href="error.html">
+                    <i class="bi bi-house"></i>
+                   Back to Home
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html" id="logoutBtn">
+                    <i class="bi bi-box-arrow-left"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <main class="main-content">
+
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input type="text"
+                    placeholder="Search projects, users...">
+
+            </div>
+
+            <div class="top-icons">
+
+                <a href="error.html">
+
+                    <i class="bi bi-moon"></i>
+
+                </a>
+
+                <a href="error.html">
+
+                    <i class="bi bi-bell"></i>
+
+                </a>
+
+                <a href="error.html">
+
+                    <i class="bi bi-envelope"></i>
+
+                </a>
+
+                <div class="profile">
+
+                    <img src="user1.webp" alt="Admin">
+
+                    <div>
+
+                        <h6 id="adminName">
+
+                            Admin
+
+                        </h6>
+
+                        <small id="adminRole">
+
+                            ADMIN
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="hero-dashboard">
+
+            <div>
+
+                <h2>
+
+                    Welcome Back,
+
+                    <span id="welcomeName">
+
+                        Admin
+
+                    </span>
+
+                    
+
+                </h2>
+
+                <p>
+
+                    Monitor renewable energy production and system performance in real time.
+
+                </p>
+
+            </div>
+
+            <div class="hero-buttons">
+
+                <a href="error.html" class="btn btn-success">
+
+                    <i class="bi bi-plus-circle"></i>
+
+                    Add Device
+
+                </a>
+
+                <a href="error.html" class="btn btn-light">
+
+                    Export Report
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <div class="row g-4">
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="stat-card active-card">
+
+                    <div>
+
+                        <span>Total Power Generated</span>
+
+                        <h3>452.8 <small>kWh</small></h3>
+
+                        <p>▲ 12% this week</p>
+
+                    </div>
+
+                    <i class="bi bi-lightning-charge-fill"></i>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <span>Current Consumption</span>
+
+                        <h3>2.4 <small>kW</small></h3>
+
+                        <p>Peak Usage</p>
+
+                    </div>
+
+                    <i class="bi bi-speedometer2"></i>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <span>Battery Storage</span>
+
+                        <h3>84%</h3>
+
+                        <p>Charging Optimally</p>
+
+                    </div>
+
+                    <i class="bi bi-battery-half"></i>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-md-6">
+
+                <div class="stat-card">
+
+                    <div>
+
+                        <span>Grid Status</span>
+
+                        <h3>Online</h3>
+
+                        <p>Last Sync 2 min ago</p>
+
+                    </div>
+
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+  
+<div class="row g-4 mt-2">
+
+
+    <div class="col-xl-3 col-lg-4">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>Savings Progress</h5>
+
+                <a href="error.html">
+
+                    <i class="bi bi-three-dots"></i>
+
+                </a>
+
+            </div>
+
+            <div class="progress-circle">
+
+                <svg width="180" height="180">
+
+                    <circle
+                        class="progress-bg"
+                        cx="90"
+                        cy="90"
+                        r="65">
+                    </circle>
+
+                    <circle
+                        class="progress-bar"
+                        id="savingCircle"
+                        cx="90"
+                        cy="90"
+                        r="65">
+                    </circle>
+
+                </svg>
+
+                <div class="progress-value">
+
+                    <h2 id="savingValue">
+
+                        0%
+
+                    </h2>
+
+                    <span>
+
+                        Goal Reached
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="saving-list">
+
+                <div>
+
+                    <span>
+
+                        Eco Generated
+
+                    </span>
+
+                    <strong>
+
+                        124.50 kWh
+
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+
+                        Grid Savings
+
+                    </span>
+
+                    <strong>
+
+                        ₹42,150
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-xl-9 col-lg-8">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Real-Time Energy Usage
+
+                </h5>
+
+                <a href="error.html">
+
+                    Last 24 Hours
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </a>
+
+            </div>
+
+            <canvas id="energyChart"></canvas>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="row g-4 mt-2">
+
+
+
+    <div class="col-xl-7">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Smart Devices
+
+                </h5>
+
+                <a href="error.html">
+
+                    Manage All
+
+                </a>
+
+            </div>
+
+            <div class="device-grid">
+
+
+                <div class="device-card">
+
+                    <div>
+
+                        <i class="bi bi-house-door-fill"></i>
+
+                        <h6>HVAC System</h6>
+
+                        <small>Heating Active</small>
+
+                    </div>
+
+                    <div class="form-check form-switch">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked>
+
+                    </div>
+
+                </div>
+
+
+                <div class="device-card">
+
+                    <div>
+
+                        <i class="bi bi-lightning-charge-fill"></i>
+
+                        <h6>Solar Inverter</h6>
+
+                        <small>Running</small>
+
+                    </div>
+
+                    <div class="form-check form-switch">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked>
+
+                    </div>
+
+                </div>
+
+        
+
+                <div class="device-card">
+
+                    <div>
+
+                        <i class="bi bi-ev-front-fill"></i>
+
+                        <h6>EV Charger</h6>
+
+                        <small>Charging</small>
+
+                    </div>
+
+                    <div class="form-check form-switch">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox">
+
+                    </div>
+
+                </div>
+
+    
+
+                <div class="device-card">
+
+                    <div>
+
+                        <i class="bi bi-battery-charging"></i>
+
+                        <h6>Battery Backup</h6>
+
+                        <small>Connected</small>
+
+                    </div>
+
+                    <div class="form-check form-switch">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            checked>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-xl-5">
+
+        <div class="dashboard-card carbon-card">
+
+            <span class="badge bg-success">
+
+                Top 5%
+
+            </span>
+
+            <h5>
+
+                Carbon Offset Tracker
+
+            </h5>
+
+            <p>
+
+                Total environmental impact this year.
+
+            </p>
+
+            <div class="carbon-details">
+
+                <div>
+
+                    <h2>
+
+                        12.4
+
+                    </h2>
+
+                    <small>
+
+                        Tons CO₂ Saved
+
+                    </small>
+
+                </div>
+
+                <div>
+
+                    <h2>
+
+                        548
+
+                    </h2>
+
+                    <small>
+
+                        Trees Equivalent
+
+                    </small>
+
+                </div>
+
+            </div>
+
+            <a
+                href="error.html"
+                class="btn btn-light mt-4">
+
+                View Detailed Impact
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="row g-4 mt-2">
+
+    
+
+    <div class="col-xl-7">
+
+        <div class="dashboard-card">
+
+            <div class="card-header-custom">
+
+                <h5>
+
+                    Recent Renewable Projects
+
+                </h5>
+
+                <a href="error.html">
+
+                    View All
+
+                </a>
+
+            </div>
+
+            <div class="table-responsive">
+
+                <table class="table align-middle">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Project</th>
+
+                            <th>Type</th>
+
+                            <th>Status</th>
+
+                            <th>Progress</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Solar Park Alpha</td>
+
+                            <td>Solar</td>
+
+                            <td>
+
+                                <span class="badge bg-success">
+
+                                    Active
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar bg-success"
+                                    style="width:75%">
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Wind Farm East</td>
+
+                            <td>Wind</td>
+
+                            <td>
+
+                                <span class="badge bg-warning">
+
+                                    Pending
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar bg-warning"
+                                    style="width:55%">
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Battery Storage Hub</td>
+
+                            <td>Storage</td>
+
+                            <td>
+
+                                <span class="badge bg-info">
+
+                                    Running
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar bg-info"
+                                    style="width:90%">
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>EV Charging Zone</td>
+
+                            <td>EV</td>
+
+                            <td>
+
+                                <span class="badge bg-primary">
+
+                                    Completed
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <div class="progress">
+
+                                    <div class="progress-bar bg-primary"
+                                    style="width:100%">
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+        &nbsp;
+    
+
+<div class="col-12">
+
+    <div class="dashboard-card battery-card">
+
+        <div class="card-header-custom">
+
+            <h5>
+
+                Battery Health
+
+            </h5>
+
+            <a href="error.html">
+
+                Details
+
+            </a>
+
+        </div>
+
+        <div class="battery-wrapper">
+
+            <div class="battery-circle">
+
+                <svg width="170" height="170">
+
+                    <circle
+                        class="battery-bg"
+                        cx="85"
+                        cy="85"
+                        r="60">
+                    </circle>
+
+                    <circle
+                        class="battery-progress"
+                        id="batteryCircle"
+                        cx="85"
+                        cy="85"
+                        r="60">
+                    </circle>
+
+                </svg>
+
+                <div class="battery-value">
+
+                    <h2 id="batteryPercent">
+
+                        0%
+
+                    </h2>
+
+                    <span>
+
+                        Healthy
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="battery-info">
+
+                <div>
+
+                    <span>
+
+                        Current Charge
+
+                    </span>
+
+                    <strong>
+
+                        84%
+
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+
+                        Battery Temp
+
+                    </span>
+
+                    <strong>
+
+                        29°C
+
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+
+                        Remaining Life
+
+                    </span>
+
+                    <strong>
+
+                        8.5 Years
+
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+        
+
+    </div>
+    
+
+
+
+    <div class="col-xl-5">
+
+        <div class="row g-4">
+
+   
+
+            <div class="col-12">
+
+                <div class="dashboard-card">
+
+                    <div class="card-header-custom">
+
+                        <h5>
+
+                            Contact Requests
+
+                        </h5>
+
+                        <a href="error.html">
+
+                            View All
+
+                        </a>
+
+                    </div>
+
+                    <div class="request-item">
+
+                        <img src="user3.webp">
+
+                        <div>
+
+                            <h6>Ravi Kumar</h6>
+
+                            <small>
+
+                                Solar Installation
+
+                            </small>
+
+                        </div>
+
+                        <span>
+
+                            10 Min
+
+                        </span>
+
+                    </div>
+
+                    <div class="request-item">
+
+                        <img src="user2.webp">
+
+                        <div>
+
+                            <h6>Anitha</h6>
+
+                            <small>
+
+                                Battery Storage
+
+                            </small>
+
+                        </div>
+
+                        <span>
+
+                            30 Min
+
+                        </span>
+
+                    </div>
+
+                    <div class="request-item">
+
+                        <img src="user3.webp">
+
+                        <div>
+
+                            <h6>John</h6>
+
+                            <small>
+
+                                Wind Turbine
+
+                            </small>
+
+                        </div>
+
+                        <span>
+
+                            1 Hr
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12">
+
+                <div class="weather-card">
+
+                    <div>
+
+                        <h2>
+
+                            34°C
+
+                        </h2>
+
+                        <span>
+
+                            Chennai
+
+                        </span>
+
+                        <p>
+
+                            Perfect For Solar Energy
+
+                        </p>
+
+                    </div>
+
+                    <i class="bi bi-brightness-high-fill"></i>
+
+                </div>
+
+            </div>
+
+     
+
+            <div class="col-12">
+
+                <div class="dashboard-card">
+
+                    <div class="card-header-custom">
+
+                        <h5>
+
+                            Activity Feed
+
+                        </h5>
+
+                        <a href="error.html">
+
+                            View All
+
+                        </a>
+
+                    </div>
+
+                    <ul class="activity-list">
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill text-success"></i>
+
+                            Solar Project Approved
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-person-plus-fill text-primary"></i>
+
+                            New User Registered
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-credit-card-fill text-warning"></i>
+
+                            Payment Received
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-lightning-charge-fill text-danger"></i>
+
+                            Energy Record Updated
+
+                        </li>
+
+                    </ul>
+                    
+
+                </div>
+                
+
+            </div>
+            
+
+        </div>
+        
+
+    </div>
+    
+
+</div>
+
+
+
+<div class="dashboard-card banner-card mt-4">
+
+    <div>
+
+        <h3>
+
+            Go Green, Save Earth 🌱
+
+        </h3>
+
+        <p>
+
+            Renewable energy reduces carbon emissions and creates a cleaner future for everyone.
+
+        </p>
+
+        <a
+        href="error.html"
+        class="btn btn-success">
+
+            View Detailed Report
+
+        </a>
+
+    </div>
+
+    <img src="worker4.webp"
+    alt="Green">
+
+</div>
+
+
+<footer class="dashboard-footer">
+
+    <div>
+
+        © 2026 Stackly Renewable Energy Solutions. All rights reserved.
+
+    </div>
+
+    <div>
+
+        Logged In As :
+
+        <strong id="footerUser">
+
+            Admin
+
+        </strong>
+
+        &nbsp;&nbsp;|
+
+        Role :
+
+        <span class="badge bg-success"
+        id="footerRole">
+
+            ADMIN
+
+        </span>
+
+    </div>
+
+</footer>
+
+</div>
+
+    </main>
+ 
+
+
+
+<div class="overlay" id="overlay"></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script >
+    document.addEventListener("DOMContentLoaded", () => {
+
+
+
+    const menuBtn = document.getElementById("menuBtn");
+
+    const sidebar = document.getElementById("sidebar");
+
+    const overlay = document.getElementById("overlay");
+
+    menuBtn.addEventListener("click", () => {
+
+        sidebar.classList.toggle("active");
+
+        overlay.classList.toggle("active");
+
+    });
+
+    overlay.addEventListener("click", () => {
+
+        sidebar.classList.remove("active");
+
+        overlay.classList.remove("active");
+
+    });
+
+
+    const userName =
+        localStorage.getItem("userName") || "Admin";
+
+    const userRole =
+        localStorage.getItem("userRole") || "ADMIN";
+
+    document.getElementById("adminName").innerHTML =
+        userName;
+
+    document.getElementById("welcomeName").innerHTML =
+        userName;
+
+    document.getElementById("footerUser").innerHTML =
+        userName;
+
+    document.getElementById("adminRole").innerHTML =
+        userRole.toUpperCase();
+
+    document.getElementById("footerRole").innerHTML =
+        userRole.toUpperCase();
+
+
+    document.getElementById("logoutBtn")
+        .addEventListener("click", function (e) {
+
+            e.preventDefault();
+
+            Swal.fire({
+
+                title: "Logout",
+
+                text: "Do you want to logout?",
+
+                icon: "question",
+
+                showCancelButton: true,
+
+                confirmButtonColor: "#16A34A",
+
+                cancelButtonColor: "#d33",
+
+                confirmButtonText: "Yes"
+
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+
+                    localStorage.clear();
+
+                    window.location.href = "login.html";
+
+                }
+
+            });
+
+        });
+
+
+    const circle =
+        document.getElementById("savingCircle");
+
+    const value =
+        document.getElementById("savingValue");
+
+    const radius = 65;
+
+    const circumference = 2 * Math.PI * radius;
+
+    circle.style.strokeDasharray = circumference;
+
+    let percent = 72;
+
+    let current = 0;
+
+    const interval = setInterval(() => {
+
+        if (current >= percent) {
+
+            clearInterval(interval);
+
+        }
+
+        current++;
+
+        value.innerHTML = current + "%";
+
+        const offset =
+            circumference -
+            (current / 100) * circumference;
+
+        circle.style.strokeDashoffset = offset;
+
+    }, 20);
+
+
+
+    const ctx =
+        document.getElementById("energyChart");
+
+    if (ctx) {
+
+        new Chart(ctx, {
+
+            type: "line",
+
+            data: {
+
+                labels: [
+
+                    "Mon",
+
+                    "Tue",
+
+                    "Wed",
+
+                    "Thu",
+
+                    "Fri",
+
+                    "Sat",
+
+                    "Sun"
+
+                ],
+
+                datasets: [
+
+                    {
+
+                        label: "Solar",
+
+                        data: [
+
+                            28,
+
+                            42,
+
+                            38,
+
+                            55,
+
+                            49,
+
+                            63,
+
+                            72
+
+                        ],
+
+                        borderColor: "#16A34A",
+
+                        backgroundColor:
+                            "rgba(22,163,74,.15)",
+
+                        tension: .4,
+
+                        fill: true
+
+                    },
+
+                    {
+
+                        label: "Wind",
+
+                        data: [
+
+                            18,
+
+                            30,
+
+                            28,
+
+                            35,
+
+                            42,
+
+                            39,
+
+                            46
+
+                        ],
+
+                        borderColor: "#0EA5E9",
+
+                        backgroundColor:
+                            "rgba(14,165,233,.10)",
+
+                        tension: .4,
+
+                        fill: true
+
+                    }
+
+                ]
+
+            },
+
+            options: {
+
+                responsive: true,
+
+                maintainAspectRatio: false,
+
+                plugins: {
+
+                    legend: {
+
+                        display: true
+
+                    }
+
+                },
+
+                scales: {
+
+                    y: {
+
+                        beginAtZero: true
+
+                    }
+
+                }
+
+            }
+
+        });
+
+    }
+
+  
+
+    document.querySelectorAll(
+
+        ".stat-card,.dashboard-card"
+
+    ).forEach((card, index) => {
+
+        card.style.opacity = "0";
+
+        card.style.transform =
+            "translateY(40px)";
+
+        setTimeout(() => {
+
+            card.style.transition = ".6s";
+
+            card.style.opacity = "1";
+
+            card.style.transform =
+                "translateY(0)";
+
+        }, index * 120);
+
+    });
+
+});
+
+
+const batteryCircle =
+document.getElementById("batteryCircle");
+
+const batteryValue =
+document.getElementById("batteryPercent");
+
+const batteryRadius = 60;
+
+const batteryCircumference =
+2 * Math.PI * batteryRadius;
+
+batteryCircle.style.strokeDasharray =
+batteryCircumference;
+
+let batteryCurrent = 0;
+
+const batteryTarget = 84;
+
+const batteryInterval = setInterval(()=>{
+
+    if(batteryCurrent >= batteryTarget){
+
+        clearInterval(batteryInterval);
+
+    }
+
+    batteryCurrent++;
+
+    batteryValue.innerHTML =
+    batteryCurrent + "%";
+
+    const offset =
+    batteryCircumference -
+    (batteryCurrent/100) *
+    batteryCircumference;
+
+    batteryCircle.style.strokeDashoffset =
+    offset;
+
+},20);
+</script>
+
+</body>
+</html>
