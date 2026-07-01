@@ -83,6 +83,9 @@ ul{
     margin-bottom:40px;
 
 }
+.mobile-logo{
+    display:none;
+}
 
 .logo img{
 
