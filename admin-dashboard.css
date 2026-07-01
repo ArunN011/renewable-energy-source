@@ -1929,15 +1929,75 @@ font-size:42px;
 
 }
 
+.mobile-header{
 
+    display:none;
+
+}
 
 @media(max-width:992px){
     body,html{
         overflow-x:hidden;
     }
+    .mobile-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:15px 20px;
+
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1001;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+.logo{
+    display:none;
+}
+
+.mobile-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.mobile-logo img{
+
+    width:100px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
+
+.mobile-logo h4{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#16A34A;
+
+}
 
 .sidebar{
-
+top:70px;
 left:-280px;
 
 }
@@ -2017,6 +2077,17 @@ width:220px;
 justify-content:center;
 
 text-align:center;
+
+}
+.profile h6{
+
+    font-size:15px;
+
+    white-space:normal;
+
+    word-break:break-word;
+
+    line-height:1.3;
 
 }
 
